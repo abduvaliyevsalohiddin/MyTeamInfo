@@ -4,7 +4,7 @@ from coreApp.models import *
 
 class Services(CoreModel):
     title = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='services/')
+    image = models.ImageField(upload_to='services')
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
@@ -13,7 +13,7 @@ class Services(CoreModel):
 
 class MyTeam(CoreModel):
     title = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='myTeam/')
+    image = models.ImageField(upload_to='myTeam')
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
@@ -22,7 +22,7 @@ class MyTeam(CoreModel):
 
 class UsAbout(CoreModel):
     title = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='usAbout/')
+    image = models.ImageField(upload_to='usAbout')
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
