@@ -8,7 +8,7 @@ class Services(CoreModel):
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.title
+        return f'{self.title}'
 
 
 class MyTeam(CoreModel):

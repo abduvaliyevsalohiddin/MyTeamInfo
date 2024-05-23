@@ -3,11 +3,6 @@ from rest_framework.generics import *
 from .serializers import *
 
 
-class ServicesListCreateAPIView(ListCreateAPIView):
-    queryset = Services.objects.all()
-    serializer_class = ServiceSerializer
-
-
 class ServicesRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Services.objects.all()
     serializer_class = ServiceSerializer
@@ -41,3 +36,8 @@ class RegisterTeamListCreateAPIView(ListCreateAPIView):
 class RegisterTeamRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = RegisterTeam.objects.all()
     serializer_class = RegisterTeamSerializer
+
+
+class ServicesListCreateAPIView(ListCreateAPIView):
+    queryset = Services.objects.all()
+    serializer_class = ServiceSerializer
