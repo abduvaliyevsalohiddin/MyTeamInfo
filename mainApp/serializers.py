@@ -24,3 +24,9 @@ class RegisterTeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = RegisterTeam
         fields = '__all__'
+
+
+class PartnersSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Partners
+        fields = '__all__'

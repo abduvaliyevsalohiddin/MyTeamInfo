@@ -10,4 +10,5 @@ urlpatterns = [
     path('usAbout/<int:pk>/', UsAboutRetrieveUpdateDestroyAPIView.as_view()),
     path('registerTeams/', RegisterTeamListCreateAPIView.as_view()),
     path('registerTeam/<int:pk>/', RegisterTeamRetrieveUpdateDestroyAPIView.as_view()),
+    path('partners/', PartnersListCreateAPIView.as_view()),
 ]

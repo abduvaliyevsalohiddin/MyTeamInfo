@@ -41,3 +41,8 @@ class RegisterTeamRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
 class ServicesListCreateAPIView(ListCreateAPIView):
     queryset = Services.objects.all()
     serializer_class = ServiceSerializer
+
+
+class PartnersListCreateAPIView(ListCreateAPIView):
+    queryset = Partners.objects.all()
+    serializer_class = PartnersSerializer
